@@ -1,0 +1,215 @@
+.header {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: 60px 60px;
+    width: 100vw;
+    height: 15vh;
+    position: fixed;
+    z-index: 2;
+    background-color: #ececec;
+}
+
+.indicator {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 60px 60px 2fr 1fr 2fr 60px;
+    height: 100vh;
+    width: calc(100vw - 87.5vw);
+    position: fixed;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: 60px 60px 2fr 1fr 2fr 60px;
+    grid-template-areas: "sign_header menu_header"
+        "indicator_line logo_seaction"
+        "square_indicator indicator logo_seaction"
+        "timeline_square  namber_square scroll info"
+        "line_last line_last";
+    height: 100vh;
+}
+
+body {
+    margin: 0 auto;
+    background-color: #ececec;
+}
+
+.sign_header {
+    grid-column: 2;
+    grid-row: 2;
+    grid-area: sign_header menu_header;
+    align-self: flex-start;
+}
+
+.menu_header {
+    grid-column: -2/-5;
+    grid-row: 2;
+    grid-area: sign_header menu_header;
+    align-self: flex-start;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.hamburger {
+    grid-column: -3;
+    grid-row: 2;
+    grid-area: sign_header menu_header;
+    justify-self: flex-end;
+    align-self: flex-start;
+    display: none;
+}
+
+.logo_seaction {
+    grid-column: 7/11;
+    grid-row: 2/6;
+    grid-area: logo_seaction logo_seaction;
+    justify-self: center;
+    align-self: center;
+}
+
+.indicator_line {
+    grid-column: 2;
+    grid-area: indicator_line logo_seaction;
+    justify-self: start;
+    align-self: flex-end;
+    grid-row: 3/5;
+    z-index: 1;
+}
+
+.info {
+    grid-area: indicator scroll info;
+    grid-column: -2/-4;
+    grid-row: 5;
+    align-self: flex-end;
+    margin-bottom: 0;
+}
+
+.scroll {
+    grid-area: indicator scroll info;
+    grid-column: 8/10;
+    grid-row: 5;
+    justify-self: center;
+    align-self: flex-end;
+    padding-bottom: 0;
+}
+
+.line_last {
+    grid-column: 8/10;
+    grid-area: line_last line_last;
+    justify-self: center;
+    align-self: flex-end;
+    grid-row: 6;
+}
+
+.timeline_square {
+    grid-column: 2;
+    grid-area: timeline_square namber_square scroll info;
+    grid-row: 5/6;
+    z-index: 1;
+}
+
+.namber_square {
+    grid-column: 2;
+    grid-area: timeline_square namber_square scroll info;
+    justify-self: center;
+    align-self: flex-start;
+    grid-row: 5/6;
+    z-index: 2;
+}
+
+
+@media screen and (max-width: 992px) {
+    .menu_header {
+        grid-column: -2/-6;
+    }
+
+    .info {
+        grid-column: -2/-5;
+    }
+
+    .timeline_square {
+        grid-column: 2/4;
+    }
+
+    .logo_seaction {
+        grid-column: 6/12;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu_header {
+        grid-column: -2/-6;
+        display: none;
+    }
+
+    .info {
+        grid-column: -2/-5;
+    }
+
+    .timeline_square {
+        grid-column: 2/5;
+    }
+
+    .logo_seaction {
+        grid-column: 6/12;
+    }
+
+    .hamburger {
+        grid-column: -3;
+        grid-row: 2;
+        grid-area: sign_header menu_header;
+        justify-self: flex-end;
+        align-self: flex-start;
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .menu_header {
+        grid-column: -2/-6;
+        display: none;
+    }
+
+    .info {
+        grid-column: -2/-5;
+    }
+
+    .timeline_square {
+        grid-column: 2/5;
+    }
+
+    .logo_seaction {
+        grid-column: 6/12;
+    }
+
+    .hamburger {
+        grid-column: -3;
+        grid-row: 2;
+        grid-area: sign_header menu_header;
+        justify-self: flex-end;
+        align-self: flex-start;
+        display: block;
+    }
+
+    .info {
+        grid-area: indicator scroll info;
+        grid-column: -2/-6;
+        grid-row: 5;
+        align-self: flex-end;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .info {
+        grid-area: indicator scroll info;
+        grid-column: -2/;
+        grid-row: 5;
+        justify-self: end;
+        align-self: flex-end;
+        margin-bottom: 0;
+    }
+
+}

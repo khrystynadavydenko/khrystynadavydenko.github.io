@@ -1,0 +1,254 @@
+body .cursor {
+    pointer-events: none;
+}
+
+body .cursor__ball {
+    position: fixed;
+    top: 0;
+    left: 0;
+    mix-blend-mode: difference;
+    z-index: 20200;
+}
+
+body .cursor__ball circle {
+    fill: #ececec;
+}
+
+/* Переналаштовуємо стилі оформлення модального вікна */
+
+body.lg-on {
+    overflow: hidden;
+}
+
+.lg-backdrop {
+    background: #ececec;
+}
+
+.lg-outer .lg-img-wrap:before,
+.lg-outer .lg-item:before {
+    display: none;
+}
+
+.lg-outer .lg-img-wrap,
+.lg-outer .lg-item {
+    text-align: left;
+}
+
+.lg-outer .lg-img-wrap {
+    padding: 0;
+    right: auto;
+    display: flex;
+    align-items: center;
+}
+
+.lg-outer img.lg-object {
+    width: auto;
+    max-width: 70%;
+    height: 100% !important;
+}
+
+.lg-toolbar {
+    background: none;
+}
+
+.lg-actions .lg-next,
+.lg-actions .lg-prev {
+    z-index: 1081;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: 12%;
+}
+
+.lg-actions .lg-prev {
+    right: 34%;
+    background: none;
+}
+
+.lg-actions .lg-next {
+    right: 5.5%;
+    background: none;
+}
+
+.lg-actions .lg-prev:after {
+    content: "PREV";
+    background: transparent;
+    color: black;
+    font-size: 13px;
+    letter-spacing: 0.2vh;
+    font-family: 'HelveticaNeueCyr';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 66%;
+    letter-spacing: 0.2vh;
+}
+
+.lg-actions .lg-next:before {
+    content: "NEXT";
+    color: black;
+    font-size: 13px;
+    letter-spacing: 0.2vh;
+    font-family: 'HelveticaNeueCyr';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 66%;
+    letter-spacing: 0.2vh;
+}
+
+.lg-toolbar .lg-close:after {
+    content: "CLOSE";
+    color: black;
+    font-size: 13px;
+    letter-spacing: 0.2vh;
+    font-family: 'HelveticaNeueCyr';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 66%;
+    letter-spacing: 0.2vh;
+}
+
+#lg-counter {
+    position: fixed;
+    top: 45%;
+    right: 47px;
+    transform: rotate(90deg);
+    color: black;
+    font-size: 11px;
+    letter-spacing: 0.2vh;
+    font-family: 'HelveticaNeueCyr';
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.2vh;
+}
+
+.lg-outer .lg-inner {}
+
+.lg-sub-html {
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    left: auto;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    padding-right: 80px;
+    background: none;
+    opacity: 1;
+
+}
+
+
+.lg-sub-html .caption_details {
+    font-size: 13px;
+    line-height: 4vh;
+    color: #000;
+    padding-top: 3vh;
+}
+
+.lg-sub-html .caption_name {
+    list-style-type: none;
+    font-family: 'Kyiv*Sans Beta3';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.7vw;
+    letter-spacing: 1px;
+    padding-left: 0;
+    margin-left: 0;
+    text-transform: uppercase;
+    color: #000;
+    padding-top: 3vh;
+}
+
+.lg-outer.lg-grabbing .lg-inner,
+.lg-outer.lg-dragging .lg-inner {
+    transform: scale(0.9);
+}
+
+.lg-outer .lg-inner {
+    transition: transform 0.4s ease;
+    transform: scale(1);
+}
+
+.lg-outer.lg-grabbing .lg-sub-html,
+.lg-outer.lg-dragging .lg-sub-html {
+    opacity: 0;
+}
+
+.lg-sub-html > div {
+    animation-name: fx_fadeIn;
+    animation-duration: 0.4s;
+    animation-fill-mode: backwards;
+}
+
+.lg-next.lg-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    padding-left: 0;
+    padding-top: 5vh;
+    font-size: 15px;
+    letter-spacing: 0.2vh;
+}
+
+.lg-prev.lg-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    padding-left: 0;
+    padding-top: 5vh;
+    font-size: 15px;
+    letter-spacing: 0.2vh;
+}
+
+.lg-close.lg-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    margin-right: 11vh;
+    padding-top: 10vh;
+    font-size: 15px;
+    letter-spacing: 0.2vh;
+}
+
+
+
+.botton.lg-close.lg-icon:after {
+    color: black;
+    font-size: 13px;
+    letter-spacing: 0.2vh;
+    font-family: 'HelveticaNeueCyr';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 66%;
+    letter-spacing: 0.2vh;
+}
+
+.lg-sub-html .horizontal_line_p {
+    width: 30.8%;
+    height: 5%;
+    border-bottom: 1px solid black;
+    position: fixed;
+    right: 84px;
+    bottom: 60px;
+}
+
+.lg-hide-items > * {
+    opacity: 1 !important;
+}
+
+@keyframes fx_fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

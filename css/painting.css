@@ -1,0 +1,357 @@
+body {
+    font-family: 'HelveticaNeueCyr';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 66%;
+    letter-spacing: 0.2vh;
+}
+
+@font-face {
+    font-family: 'Kyiv*Sans Beta3';
+    src: url('../fonts/KyivSansBeta-Regular3.eot');
+    src: local('../fonts/Kyiv*Sans Beta Regular3'), local('Kyiv*SansBeta-Regular3'),
+        url('../fonts/KyivSansBeta-Regular3.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/KyivSansBeta-Regular3.woff2') format('woff2'),
+        url('../fonts/KyivSansBeta-Regular3.woff') format('woff'),
+        url('../fonts/KyivSansBeta-Regular3.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.namber_square p {
+    color: #000;
+}
+
+
+a.menu-link {
+    color: #000;
+}
+
+a.hoverable {
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    margin-bottom: 0;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.sign_header {
+    height: 0.7rem;
+    width: 0.7rem;
+    background-color: black;
+}
+
+.menu_header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.indicator_line {
+    height: 40%;
+    border-left: 1px solid black;
+
+}
+
+.timeline_square {
+    margin-left: 5vh;
+    display: grid;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.line_square {
+    width: 1en;
+    border-bottom: 1px solid black;
+}
+
+.square1 a {
+    height: 0.6rem;
+    width: 0.6rem;
+    background-color: black;
+    display: grid;
+    align-items: flex-start;
+}
+
+.timeline_group {
+    display: flex;
+    flex-direction: row;
+}
+
+.square2 a,
+.square3 a,
+.square4 a {
+    height: 0.5rem;
+    width: 0.5rem;
+    border: 1px solid black;
+    border-style: inset;
+    display: grid;
+    align-items: flex-start;
+}
+
+.namber_square {
+    display: flex;
+    padding-left: 2vh;
+}
+
+.nambers_series2 p {
+    font-size: 2vw;
+}
+
+.series_seaction {
+    list-style-type: none;
+    font-family: 'Kyiv*Sans Beta3';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 10vw;
+}
+
+.nambers_series1 p {
+    font-family: 'Kyiv*Sans Beta3';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 4vw;
+}
+
+.nambers_series2 p {
+    font-size: 1vw;
+    margin-bottom: 5vh;
+    margin-right: 2vh;
+}
+
+.line_nambers {
+    width: 80%;
+    height: auto;
+    border-bottom: 1px solid black;
+    -webkit-transform:
+        rotate(-50deg);
+    margin-top: 10vh;
+}
+
+
+
+
+body {
+    height: 100vh;
+    background: #010101;
+    cursor: none;
+    margin: 0;
+}
+
+body h1,
+body p,
+body a {
+    color: #fff;
+}
+
+body .cursor {
+    pointer-events: none;
+}
+
+body .cursor__ball {
+    position: fixed;
+    top: 0;
+    left: 0;
+    mix-blend-mode: difference;
+    z-index: 1000;
+}
+
+body .cursor__ball circle {
+    fill: #ececec;
+}
+
+body .painting {
+    height: 100%;
+    width: 100%;
+}
+
+body .painting {
+    background: #ececec;
+}
+
+body .painting h1,
+body .painting p,
+body .painting a {
+    color: #000;
+}
+
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #000;
+}
+
+#preload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    overflow: hidden;
+    z-index: 2020;
+    background-color: black;
+    position: fixed;
+}
+
+#preload {
+    z-index: 2020;
+    background-color: black;
+    animation-name: preloader-frame-fade;
+    animation-duration: 3s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+    height: 0;
+    animation-timing-function: ease-out;
+}
+
+@keyframes preloader-frame-fade {
+    0% {
+        visibility: visible;
+        height: 100vh;
+    }
+
+    60% {
+        height: 100vh;
+    }
+
+    99% {
+        height: 0;
+    }
+
+    100% {
+        visibility: hidden;
+    }
+}
+
+.page {
+    width: 50%;
+    margin: auto;
+}
+
+
+@media screen and (max-width: 920px) {
+
+    .namber_square {
+        display: flex;
+        padding-left: 1vh;
+    }
+
+    .nambers_series1 p {
+        font-family: 'Kyiv*Sans Beta3';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 4vw;
+        margin-top: 2vh;
+    }
+
+    .nambers_series2 p {
+        font-size: 1.5vw;
+        margin-bottom: 5vh;
+        margin-left: 2vh;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    .namber_square {
+        display: flex;
+        padding-left: 0.5vh;
+        display: none;
+    }
+
+    .nambers_series1 p {
+        font-family: 'Kyiv*Sans Beta3';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 5vw;
+        margin-top: 2vh;
+    }
+
+    .nambers_series2 p {
+        font-size: 1.5vw;
+        margin-bottom: 5vh;
+        margin-left: 2vh;
+    }
+
+    .series_seaction {
+        list-style-type: none;
+        font-family: 'Kyiv*Sans Beta3';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 14vw;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .nambers_series1 p {
+        font-family: 'Kyiv*Sans Beta3';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 6vw;
+        margin-top: 3vh;
+    }
+
+    .nambers_series2 p {
+        font-size: 2.3vw;
+        margin-bottom: 5vh;
+        margin-left: 3vh;
+    }
+
+    .series_seaction {
+        list-style-type: none;
+        font-family: 'Kyiv*Sans Beta3';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 14vw;
+    }
+}
+
+@media screen and (max-width: 420px) {
+
+    .nambers_series1 p {
+        font-family: 'Kyiv*Sans Beta3';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 6vw;
+        margin-top: 5vh;
+    }
+
+    .nambers_series2 p {
+        font-size: 3vw;
+        margin-bottom: 7vh;
+        margin-left: 3vh;
+    }
+
+    .series_seaction {
+        list-style-type: none;
+        font-family: 'Kyiv*Sans Beta3';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 14vw;
+    }
+}

@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Kyiv*Sans Beta3';
+    src: url('KyivSansBeta-Regular3.eot');
+    src: local('Kyiv*Sans Beta Regular3'), local('Kyiv*SansBeta-Regular3'),
+        url('KyivSansBeta-Regular3.eot?#iefix') format('embedded-opentype'),
+        url('KyivSansBeta-Regular3.woff2') format('woff2'),
+        url('KyivSansBeta-Regular3.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kyiv*Sans Beta3';
+    src: url('KyivSansBeta-Regular3.eot');
+    src: local('Kyiv*Sans Beta Regular3'), local('Kyiv*SansBeta-Regular3'),
+        url('KyivSansBeta-Regular3.eot?#iefix') format('embedded-opentype'),
+        url('KyivSansBeta-Regular3.woff2') format('woff2'),
+        url('KyivSansBeta-Regular3.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+

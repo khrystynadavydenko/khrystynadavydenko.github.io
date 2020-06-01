@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Liudmila Davydenko</title>
+    <link rel="stylesheet" href="css/locomotive-scroll.css">
+    <link rel="stylesheet" href="css/rhizomes.series_grid.css">
+    <link rel="stylesheet" href="css/rhizomes.series.css">
+    <link href="//db.onlinewebfonts.com/c/05e3738cb717a3ec76df1fa726367746?family=HelveticaNeueCyr" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+    <div id="preload">
+    </div>
+    <div class="header">
+        <a class="sign_header hoverable" href="index.html">
+        </a>
+        <a class="hamburger hoverable" href="menu.html">
+            <img src="Photo/hamburger.png" width="12px">
+        </a>
+        <div class="menu_header">
+            <ul class="menu">
+                <li class="hoverable"><a class="menu-link" href="about.html">ABOUT</a></li>
+                <li class="menu-item"><a class="hoverable" href="painting.html">PAINTING</a></li>
+                <li class="hoverable"><a class="menu-link" href="contacts.html">CONTACTS</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="indicator">
+        <div class="indicator_line"></div>
+        <div class="timeline_square">
+            <div class="square2"><a class="hoverable" href="index.html"></a></div>
+            <div class="square3"><a class="hoverable" href="painting.html"></a></div>
+            <div class="timeline_group">
+                <div class="square1"><a class="hoverable" href="about.html"></a></div>
+                <div class="namber_square">
+                    <p>- 03</p>
+                </div>
+            </div>
+
+            <div class="square4"><a class="hoverable" href="contacts.html"></a></div>
+        </div>
+    </div>
+
+
+    <div data-scroll-container id="js-scroll">
+        <div data-scroll-section>
+            <div class="rhizomes_series">
+                <div class="rhizomess hoverable" data-scroll>
+                    <p> RHIZOMES </p>
+                </div>
+                <div class="explanation_rhizomes" data-scroll>
+                    <P>Rhizome (from the ancient Greek "rhízōma" – "rootstock") is a nonlinear system of bonds, extending simultaneously in all directions and is infinite in its essence. One of the principles of such a system is the principle of vaccination, where each part of the rhizome can be combined with any other. The term comes from botany, where it denotes some types of plants’ rootstocks.</P>
+                </div>
+            </div>
+
+            <div class="gallery_rhizomes" data-scroll>
+                <div class="r_picture1 hoverable">
+                    <img src="Photo/r_picture_1.jpg" class="lazy">
+                </div>
+                <div class="r_picture2 hoverable">
+                    <img src="Photo/r_picture_2.jpg" class="lazy">
+                </div>
+                <div class="r_picture3 hoverable">
+                    <img src="Photo/r_picture_3.jpg" class="lazy">
+                </div>
+                <div class="r_picture4 hoverable">
+                    <img src="Photo/r_picture_4.jpg" class="lazy">
+                </div>
+                <div class="r_picture5 hoverable">
+                    <img src="Photo/r_picture_5.jpg" class="lazy">
+                </div>
+                <div class="r_picture6 hoverable">
+                    <img src="Photo/r_picture_6.jpg" class="lazy">
+                </div>
+                <div class="r_picture7 hoverable">
+                    <img src="Photo/r_picture_7.jpg" class="lazy">
+                </div>
+                <div class="r_picture8 hoverable">
+                    <img src="Photo/r_picture_8.jpg" class="lazy">
+                </div>
+                <div class="r_picture9 hoverable">
+                    <img src="Photo/r_picture_9.jpg" class="lazy">
+                </div>
+            </div>
+
+            <div class="next_chapter">
+                <div class="next_serie" data-scroll>
+                    <p> NEXT SERIE </p>
+                </div>
+                <div class="horizontal_line"></div>
+                <div class="holovas" data-scroll>
+                    <a class="hoverable" class="holova" href=holova.series.html>HOLOVA</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cursor">
+        <div class="cursor__ball cursor__ball--big ">
+            <svg height="30" width="30">
+                <circle cx="15" cy="15" r="12" stroke-width="0"></circle>
+            </svg>
+        </div>
+
+        <div class="cursor__ball cursor__ball--small">
+            <svg height="10" width="10">
+                <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
+            </svg>
+        </div>
+    </div>
+
+
+    <script src="js/locomotive-scroll.min.js"></script>
+
+    <script>
+        ! function() {
+            "use strict";
+            document.documentElement.classList.add("is-loaded"), document.documentElement.classList.remove("is-loading"), setTimeout(function() {
+                document.documentElement.classList.add("is-ready")
+            }, 300), setTimeout(function() {
+                var i = new LocomotiveScroll({
+                        el: document.querySelector("#js-scroll"),
+                        smooth: true,
+                        getSpeed: !0,
+                        getDirection: !0,
+                        useKeyboard: !0
+                    }),
+                    n = [],
+                    o = [];
+
+                i.on("call", function(t, e, i) {
+                    if ("fx-reveal" === t)
+                        if ("enter" === e) n.push({
+                            id: i.id,
+                            el: i.el
+                        });
+                        else
+                            for (s = 0; s < o.length; s++) i.id === o[s].id && o.splice(s, 1)
+                });
+
+            }, 1000);
+        }();
+
+    </script>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js'></script>
+
+    <script src="js/cursor.js"></script>
+
+    <script src="js/lazy_loading.js"></script>
+
+</body>
+
+</html>
