@@ -5,6 +5,16 @@ body {
     font-size: 66%;
     letter-spacing: 0.2vh;
 }
+@font-face {
+	font-family: 'HelveticaNeueCyr';
+	src: url('../fonts/HelveticaNeueCyr-UltraLight.eot');
+	src: local('../fonts/HelveticaNeueCyr-UltraLight'),
+		url('../fonts/HelveticaNeueCyr-UltraLight.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/HelveticaNeueCyr-UltraLight.woff') format('woff'),
+		url('../fonts/HelveticaNeueCyr-UltraLight.ttf') format('truetype');
+	font-weight: 200;
+	font-style: normal;
+}
 
 @font-face {
     font-family: 'Kyiv*Sans Beta3';

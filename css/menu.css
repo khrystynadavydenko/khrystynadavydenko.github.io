@@ -7,6 +7,17 @@ body {
 }
 
 @font-face {
+	font-family: 'HelveticaNeueCyr';
+	src: url('../fonts/HelveticaNeueCyr-UltraLight.eot');
+	src: local('../fonts/HelveticaNeueCyr-UltraLight'),
+		url('../fonts/HelveticaNeueCyr-UltraLight.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/HelveticaNeueCyr-UltraLight.woff') format('woff'),
+		url('../fonts/HelveticaNeueCyr-UltraLight.ttf') format('truetype');
+	font-weight: 200;
+	font-style: normal;
+}
+
+@font-face {
     font-family: 'Kyiv*Sans Beta3';
     src: url('../fonts/KyivSansBeta-Regular3.eot');
     src: local('../fonts/Kyiv*Sans Beta Regular3'), local('Kyiv*SansBeta-Regular3'),
