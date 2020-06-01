@@ -7,12 +7,12 @@ body {
 }
 @font-face {
 	font-family: 'HelveticaNeueCyr';
-	src: url('../fonts/HelveticaNeueCyr-UltraLight.eot');
-	src: local('../fonts/HelveticaNeueCyr-UltraLight'),
-		url('../fonts/HelveticaNeueCyr-UltraLight.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/HelveticaNeueCyr-UltraLight.woff') format('woff'),
-		url('../fonts/HelveticaNeueCyr-UltraLight.ttf') format('truetype');
-	font-weight: 200;
+	src: url('../fonts/HelveticaNeueCyr-Light.eot');
+	src: local('../fonts/HelveticaNeueCyr-Light'),
+		url('../fonts/HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/HelveticaNeueCyr-Light.woff') format('woff'),
+		url('../fonts/HelveticaNeueCyr-Light.ttf') format('truetype');
+	font-weight: 300;
 	font-style: normal;
 }
 
