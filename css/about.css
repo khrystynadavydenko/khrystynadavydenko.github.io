@@ -4,6 +4,7 @@ body {
     font-style: normal;
     font-size: 66%;
     letter-spacing: 0.2vh;
+    position: relative;
 }
 
 @font-face {
